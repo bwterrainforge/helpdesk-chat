@@ -15,9 +15,13 @@ Ask a question, get a response from ChatGPT. Simple setup, no bloated stack. You
 - No fancy state management, just `ngModel` and a service
 
 ## Project Structure
+
 helpdesk-chat/
+
 ├── client/ # Angular frontend
+
 ├── server/ # Express backend
+
 └── .env # Holds your OpenAI key (add manually)
 
 ## Setup
