@@ -18,11 +18,11 @@ Ask a question, get a response from ChatGPT. Simple setup, no bloated stack. You
 
 helpdesk-chat/
 
-├── client/ # Angular frontend
+ - client/  # Angular frontend
 
-├── server/ # Express backend
+ - server/ # Express backend
 
-└── .env # Holds your OpenAI key (add manually)
+ - .env # Holds your OpenAI key (add manually)
 
 ## Setup
 
