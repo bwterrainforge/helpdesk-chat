@@ -1,0 +1,21 @@
+<div class="chat-container">
+  <h2>Ask HelpdeskBot</h2>
+
+  <form (submit)="askQuestion(); $event.preventDefault()" class="chat-form">
+    <input
+      type="text"
+      [(ngModel)]="userInput"
+      name="userInput"
+      placeholder="Type your question..."
+      required
+    />
+    <button type="submit" [disabled]="isLoading || !userInput.trim()">
+      {{ isLoading ? 'Asking...' : 'Ask' }}
+    </button>
+  </form>
+
+  <div class="chat-output">
+    <p><strong>You:</strong> {{ userInput }}</p>
+    <p><strong>HelpdeskBot:</strong> {{ responseText }}</p>
+  </div>
+</div>
